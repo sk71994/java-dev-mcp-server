@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: java-dev-mcp-server
+  
+  main:
+    banner-mode: "off"
+    web-application-type: none
+
+logging:
+  level:
+    com.javadev.mcp: DEBUG
+    org.springframework: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+mcp:
+  server:
+    name: "Java Dev MCP Server"
+    version: "1.0.0"
+    protocol-version: "2024-11-05"
